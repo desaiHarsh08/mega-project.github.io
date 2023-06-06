@@ -17,13 +17,10 @@ const About = () => {
         </div>
         <div className="right px-3 text-justify md:w-[50%]">
           <p className='my-5'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae hic ipsum magnam, quasi ducimus dolorum et! Voluptates itaque possimus enim soluta voluptate unde vel inventore eos iste cupiditate dicta nostrum, voluptatem odio ab ratione expedita excepturi reprehenderit temporibus reiciendis maiores laborum! Quas, et nobis?
+          The objective of developing a web application for a farmers' portal is to provide a digital platform that can help farmers access information, services, and tools related to agriculture easily. The primary aim is to empower farmers by providing them with the latest agricultural information, market trends, and resources to help them increase their productivity and profitability. 
           </p>
           <p className='my-5'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptas ipsam eos optio magni cum, nihil dolore eius quas aliquam nam tenetur doloribus?
-          </p>
-          <p className='my-5'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptas ipsam eos optio magni cum, nihil dolore eius quas aliquam nam tenetur doloribus?
+          Agriculture is a crucial sector of the economy in many countries, providing food and livelihoods for millions of people. However, farmers often face numerous challenges, including limited access to information, finance, and markets. These challenges can hinder their productivity and profitability, leading to poverty and food insecurity. Therefore, developing a web application for a farmers' portal can help address some of these challenges, providing farmers with the resources they need to succeed.
           </p>
         </div>
 

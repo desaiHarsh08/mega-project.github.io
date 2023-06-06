@@ -30,13 +30,13 @@ const Contact = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
+                <button className="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Send</button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <p className="text-yellow-500">example@email.com</p>
-                <p className="leading-normal my-5">49 Smith St.
+                <p className="text-yellow-500 my-5">megaProject@gmail.com</p>
+                {/* <p className="leading-normal my-5">49 Smith St.
                   <br />Saint Cloud, MN 56301
-                </p>
+                </p> */}
                 <span className="inline-flex">
                   <p className="text-gray-500">
                     <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">

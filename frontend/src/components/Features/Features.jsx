@@ -2,7 +2,7 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div className='features  md:py-14 pb-20 ' id='features'>
+    <div className='features  md:py-14  ' id='features'>
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -20,8 +20,8 @@ const Features = () => {
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
-                <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Simple UI</h2>
+                <p className="leading-relaxed text-base">Easy for users to find the information they need and complete tasks without feeling overwhelmed or confused. </p>
                 <p className="mt-3 text-yellow-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -38,7 +38,7 @@ const Features = () => {
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Farming related information</h2>
                 <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
                 <p className="mt-3 text-yellow-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -55,8 +55,8 @@ const Features = () => {
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
-                <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Price Tracking</h2>
+                <p className="leading-relaxed text-base">Marketing and sales tools, such as price tracking, crop pricing and market analysis, and connecting farmers to buyers.</p>
                 <p className="mt-3 text-yellow-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>

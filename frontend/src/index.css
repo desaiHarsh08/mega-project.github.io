@@ -19,6 +19,8 @@
     background-position: 'left',   
 }
 
+
+
 @media (max-width: 767px) {
     .my-swiper-slide .left{
         height: 500px;

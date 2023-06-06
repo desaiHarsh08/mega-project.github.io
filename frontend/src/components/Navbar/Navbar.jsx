@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link as LinkRoll } from 'react-scroll'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
+
+  // let location = useLocation();
+  let navigate = useNavigate();
+  const [isLogin, setIsLogin] = useState(false);
+
+
+
+  useEffect(() => {
+    if(localStorage.getItem("token")){
+      setIsLogin(true);
+    }
+    else{
+      setIsLogin(false);
+    }
+  }, [])
+
+
+  const handleLogout = () => {
+    localStorage.clear();
+    // window.location.reload(true);
+    navigate('/');
+  }
+
+
+
+  
+  
+
+  
+  
 
   const handleClick = ()=>{
     document.getElementById('menu').classList.toggle('translate-x-[1000px]');
@@ -21,35 +51,76 @@ const Navbar = () => {
           <div className="right">
             <ul className='hidden md:flex gap-2'>
               <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
-                <LinkRoll to={'home'} smooth={true} duration={500} offset={0} >
+                { <LinkRoll to={'home'} smooth={true} duration={500} offset={0} >
                   Home
-                </LinkRoll>
+                </LinkRoll>}
+                {/* {location==='/login' && <Link to={'/'}>Home</Link>} */}
               </li>
-              <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+              {!isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
                 <LinkRoll to={'about'} smooth={true} duration={500} offset={0} >
                   About
                 </LinkRoll>
-              </li>
-              <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+              </li>:''}
+              {!isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
                 <LinkRoll to={'features'} smooth={true} duration={500} offset={0} >
                   Features
                 </LinkRoll>
-              </li>
-              <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+              </li>:''}
+              {/* {!isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
                 <LinkRoll to={'schemes'} smooth={true} duration={500} offset={-100} >
                   Schemes
                 </LinkRoll>
-              </li>
-              <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+              </li>:''}  */}
+              {!isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
                 <LinkRoll to={'contact'} smooth={true} duration={500} offset={0} >
                   Contact
                 </LinkRoll>
-              </li>
-              <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
-                <Link to={'/login'} >
-                  Login
+              </li>:''}
+              {/* {
+                isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'schemes'} >
+                  Schemes
                 </Link>
-              </li>
+              </li>:''
+              } */}
+              {/* {
+                isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'applied-schemes'} >
+                  Applied Schemes
+                </Link>
+              </li>:''
+              } */}
+              {
+                !isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'register'} >
+                  Register
+                </Link>
+              </li>:''
+              }
+              {/* {
+                isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'accessories'} >
+                  Accessories
+                </Link>
+              </li>:''
+              } */}
+              {/* {
+                isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'profile'} >
+                  Profile
+                </Link>
+              </li>:''
+              } */}
+              {!isLogin?<li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <a href={'/login'} >
+                  Login
+                </a>
+              </li>:
+              <li onClick={handleLogout} className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+              <span >
+                Logout
+              </span>
+            </li>}
             </ul>
 
             {/* On small screen devices */}
@@ -98,6 +169,11 @@ const Navbar = () => {
                   Login
                 </Link>
               </li>
+              {/* {location ==='http://localhost:3000/farmers' && <li className='hover:underline hover:underline-offset-4 cursor-pointer m-1 '>
+                <Link to={'/login'} >
+                  Cart
+                </Link>
+              </li>} */}
             </ul>
             </div>
           </div>
